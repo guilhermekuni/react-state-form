@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import * as S from './styles';
 
-const Input = ({ label, type, ...rest }) => {
+const Input = ({ label, type, hasError, success, ...rest }) => {
   return (
-    <S.InputWrapper>
+    <S.InputWrapper hasError={hasError} success={success}>
       <label>{label}</label>
       <input type={type} {...rest} />
     </S.InputWrapper>
@@ -15,10 +15,14 @@ const Input = ({ label, type, ...rest }) => {
 Input.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string,
+  hasError: PropTypes.bool,
+  success: PropTypes.bool,
 };
 
 Input.defaultProps = {
   type: 'text',
+  hasError: false,
+  success: false,
 };
 
 export default Input;

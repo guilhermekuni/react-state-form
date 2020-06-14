@@ -20,7 +20,7 @@ export default createGlobalStyle`
   body, input, button {
     color: #011627;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', 'Arial';
   }
 
   button {

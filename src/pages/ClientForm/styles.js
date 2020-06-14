@@ -22,7 +22,7 @@ export const Container = styled.div`
 
 export const Form = styled.div`
   margin-top: 20px;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex: 1;
   flex-direction: column;
